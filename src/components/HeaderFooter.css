@@ -1,0 +1,73 @@
+.header {
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    margin-right: auto;
+}
+
+.header nav {
+    margin-left: auto;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: lightgrey;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer nav {
+    margin-top: 10px;
+}
+
+.footer nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around; /* Changed from space-between to space-around */
+    padding: 0 20px; /* Added padding to give some space on the sides */
+}
+
+.footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-columns ul li {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-columns ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-columns ul li a:visited {
+    color: black;
+    text-decoration: none;
+}
