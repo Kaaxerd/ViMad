@@ -32,6 +32,7 @@ function App() {
 
             {/* Puntos de interés */}
             <Route path="/bernabeu" element={<Bernabeu />} />
+              {/* Añadimos más */}
 
             {/* Siempre redirecciona a Error cuando accede a una página no existente */}
             <Route path="*" element={<Navigate to="/error" replace />} />

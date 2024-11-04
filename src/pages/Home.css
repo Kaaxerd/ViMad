@@ -1,0 +1,30 @@
+/* CSS necesario sólo para la página de inicio */
+
+.intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/echegaray.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh; /* Adjusted to 80vh to show a bit of the rest of the page */
+    display: flex;
+    flex-direction: column; /* Stacks the elements vertically */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    color: white; /* Optional: Makes the text color white for better contrast */
+    text-align: center; /* Optional: Centers the text within the div */
+    position: relative; /* Needed for the overlay */
+}
+
+.intro h1, .intro p {
+    position: relative;
+    z-index: 2; /* Places the text above the overlay */
+}
+
+.intro h1 {
+    font-size: 4em; /* Adjust the size as needed */
+}
+
+.intro p {
+    font-size: 2em; /* Adjust the size as needed for a subtitle */
+    margin-top: -10px; /* Adjust the negative margin to reduce space with h1 */
+}

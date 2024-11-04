@@ -5,7 +5,6 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className='footer'>
-            
             <div className='footer-columns'>
                 <div className='footer-column'>
                     <h4>Quiénes Somos</h4>
@@ -16,11 +15,11 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='footer-column'>
-                    <h4>Servicios</h4>
+                    <h4>Lugares Populares en Madrid</h4>
                     <ul>
-                        <li><a href='/'>Consultoría</a></li>
-                        <li><a href='/'>Soporte</a></li>
-                        <li><a href='/'>Desarrollo</a></li>
+                        <li><a href='/'>Museos</a></li>
+                        <li><a href='/'>Parques</a></li>
+                        <li><a href='/'>Restaurantes</a></li>
                     </ul>
                 </div>
                 <div className='footer-column'>
