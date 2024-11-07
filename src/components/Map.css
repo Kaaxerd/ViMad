@@ -1,0 +1,13 @@
+.map-container {
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+    height: 600px;            /* Ocupa todo el alto de la ventana */
+    width: 100%;              /* Ocupa todo el ancho de la ventana */
+    margin-bottom: 100px;
+}
+
+.react-leaflet-container {
+    height: 500px;            /* Altura del mapa */
+    width: 80%;             /* Ancho del mapa */
+}

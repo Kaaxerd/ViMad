@@ -1,5 +1,8 @@
-// CSS
 import './App.css';
+
+
+
+
 
 // Paquetes
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
@@ -11,13 +14,13 @@ import Footer from './components/Footer';
 // Páginas clave
 import Home from './pages/Home';
 import About from './pages/About';
-
-// Puntos de interés
-import Bernabeu from './pages/landmarks/Bernabeu';
 import Error from './pages/Error';
 
-// App
+// Páginas de sitios emblemáticos
+import DetalleSitio from './components/DetalleSitio';
+
 function App() {
+  
   return (
     <Router>
       <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -29,12 +32,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
+            
+            {/* Página de detalles de sitio */}
+            <Route path="/sitio/:id" element={<DetalleSitio />} />
 
-            {/* Puntos de interés */}
-            <Route path="/bernabeu" element={<Bernabeu />} />
-              {/* Añadimos más */}
-
-            {/* Siempre redirecciona a Error cuando accede a una página no existente */}
+            {/* Redirección a Error para rutas no encontradas */}
             <Route path="*" element={<Navigate to="/error" replace />} />
           </Routes>
         </main>
