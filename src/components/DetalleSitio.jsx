@@ -26,11 +26,17 @@ const DetallesSitio = () => {
 
     return (
         <div className="detalles-sitio">
-            <h1>{nombre}</h1>
-            <img src={imagen} alt={nombre} />
-            <div className="descripcion">
+            <div className='title' style={{ 
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imagen})`,
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center',
+                
+            }}>
+                <h1>{nombre}</h1>
+            </div>
             
-            <div dangerouslySetInnerHTML={{ __html: descripcion }} className="texto"/>
+            <div className="descripcion">
+                <div dangerouslySetInnerHTML={{ __html: descripcion }} className="texto"/>
             </div>
 
             <div className="map-wrapper">

@@ -92,7 +92,7 @@ export const sitios = [
             A lo largo de su historia, la Plaza Mayor ha sido un centro de intercambio y convivencia. Con sus cafés, restaurantes y tiendas, sigue siendo un espacio donde los madrileños se encuentran para compartir una comida, tomar un café o simplemente disfrutar del ambiente. La plaza sigue siendo un símbolo de la vitalidad de Madrid y un lugar donde la tradición se encuentra con la modernidad.<br/><br/>
             En resumen, la Plaza Mayor de Madrid es mucho más que un simple espacio público. Su historia ha estado marcada por eventos históricos, culturales y sociales, y sigue siendo un referente importante en la vida de la ciudad. Con su arquitectura majestuosa y su ambiente animado, la Plaza Mayor sigue siendo uno de los lugares más representativos y queridos de Madrid.<br/><br/>
             `,
-        imagen: "/images/monumentos/plaza_mayor.jpeg",
+        imagen: "/images/monumentos/plaza_mayor.jpg",
         localizacion: { latitud: 40.4154, longitud: -3.7074 }
     },
     {
@@ -176,7 +176,7 @@ export const sitios = [
             La Gran Vía continúa siendo una de las zonas más cotizadas para la inversión en Madrid. Numerosos comercios y cadenas internacionales han abierto tiendas a lo largo de la avenida, haciendo que siga siendo un lugar privilegiado para el comercio. La oferta comercial de la Gran Vía está en constante renovación, lo que la convierte en un destino popular para los compradores.<br/><br/>
             La revitalización de la Gran Vía ha sido una de las principales prioridades del Ayuntamiento de Madrid en los últimos años. El objetivo es garantizar que la avenida siga siendo un lugar accesible, atractivo y seguro tanto para los residentes como para los turistas. La Gran Vía sigue siendo un lugar en constante evolución, adaptándose a los nuevos tiempos sin perder su alma.<br/><br/>
             `,
-        imagen: "/images/monumentos/gran_via.jpeg",
+        imagen: "/images/monumentos/gran_via.jpg",
         localizacion: { latitud: 40.4190, longitud: -3.7057 }
     },
     {
@@ -226,7 +226,7 @@ export const sitios = [
             Además de su importancia histórica y cultural, la Plaza de España se encuentra cerca de otros puntos de interés de Madrid, como el Palacio Real, el Teatro Real y la Gran Vía. Esta ubicación estratégica la convierte en un lugar de paso obligado para quienes visitan la ciudad.<br/><br/>
             Hoy en día, la Plaza de España sigue siendo una de las plazas más representativas de Madrid, un símbolo de su historia y de su evolución como ciudad moderna. El monumento a Cervantes y sus alrededores siguen siendo uno de los destinos más populares de la ciudad para quienes desean conocer un poco más sobre la cultura y la historia de España.<br/><br/>
             `,
-        imagen: "/images/monumentos/plaza_españa.jpg",
+        imagen: "/images/monumentos/plaza_espana.jpg",
         localizacion: { latitud: 40.4243, longitud: -3.7135 }
     },
     {
@@ -338,7 +338,7 @@ export const sitios = [
             Una de las características más destacadas de la Casa de Campo es su acceso fácil desde el centro de Madrid, gracias a la estación de metro Lago y a varias líneas de autobuses. Esto hace que sea una de las zonas de esparcimiento más accesibles de la ciudad.<br/><br/>
             En resumen, la Casa de Campo es un espacio natural de gran importancia histórica y cultural en Madrid. Su origen como finca real y su evolución como parque público han hecho de ella un lugar indispensable para la vida urbana en la capital. Hoy en día, sigue siendo un símbolo de la relación entre la naturaleza y la ciudad.<br/><br/>
             `,
-        imagen: "/images/monumentos/casa_campo.jpg",
+        imagen: "/images/monumentos/casa_campo.png",
         localizacion: { latitud: 40.4026, longitud: -3.7380 }
     },
     {

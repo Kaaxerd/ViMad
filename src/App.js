@@ -1,11 +1,8 @@
 import './App.css';
 
-
-
-
-
 // Paquetes
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 // Header y Footer
 import Header from './components/Header';
@@ -19,10 +16,20 @@ import Error from './pages/Error';
 // Páginas de sitios emblemáticos
 import DetalleSitio from './components/DetalleSitio';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
-  
   return (
     <Router>
+      <ScrollToTop />
       <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header />
 

@@ -1,16 +1,16 @@
 /* Estilos para el contenedor principal */
 .detalles-sitio {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 /* Título */
-.detalles-sitio h1 {
+/* .detalles-sitio h1 {
     font-size: 2rem;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 
 /* Descripción */
 .texto{
@@ -68,3 +68,28 @@
         max-height: 300px;
     }
 }
+
+.title h1 {
+    font-size: 5rem;
+    color: #fcfcfc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 80vh; /* Altura ajustada */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Contraste del texto */
+    text-align: center;
+    position: relative;
+    margin: 0; /* Elimina márgenes laterales */
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 60px; /* Espacio debajo del div */
+}
+

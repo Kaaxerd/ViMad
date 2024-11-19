@@ -23,7 +23,7 @@ const Home = () => {
             <div style={{ marginBottom: '50px' }}>
                 {/* div en blanco para hacer un poco de espacio entre el contenido y el footer */}
             </div>
-            <SitiosEmblematicos></SitiosEmblematicos>
+            <SitiosEmblematicos></SitiosEmblematicos> 
             <Map />
         </div>
     );
