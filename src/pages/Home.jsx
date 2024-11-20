@@ -10,20 +10,15 @@ const Home = () => {
     return (
         <div>
             <div className="intro">
-                <h1>Visita Madrid como nunca antes lo has hecho</h1>
+                <h1>Descubre Madrid como nunca antes lo has hecho</h1>
                 <p>Descubre los lugares más emblemáticos de la capital de España.</p>
             </div>
 
             <div className="sitios">
-                <h2>Encuentra nuestros QR en</h2>
-
-                {/* Mapa y a lo mejor una parte donde aparezcan los sitios con fotos asi bonito y tal */}
+                <h2>¡Descubre los siguientes sitios!</h2>
             </div>
 
-            <div style={{ marginBottom: '50px' }}>
-                {/* div en blanco para hacer un poco de espacio entre el contenido y el footer */}
-            </div>
-            <SitiosEmblematicos></SitiosEmblematicos> 
+            <SitiosEmblematicos /> 
             <Map />
         </div>
     );

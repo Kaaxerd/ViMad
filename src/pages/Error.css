@@ -1,0 +1,13 @@
+button {
+    background-color: lightgrey;
+    font-weight: bold;
+    padding: 10px 20px; /* Aumenta el tamaño del botón */
+    border: none; /* Elimina el borde */
+    font-size: 16px; /* Aumenta el tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
