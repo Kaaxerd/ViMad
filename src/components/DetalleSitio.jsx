@@ -1,21 +1,22 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { sitios } from './sitiosData';
 import 'leaflet/dist/leaflet.css';
 import { useParams } from 'react-router-dom';
 import L from 'leaflet';
-import './DetalleSitio.css'
+import './DetalleSitio.css';
 import QRGenerator from './QRGenerator';
+import useWikipedia from './useWikipedia';
+import { sitios } from './sitiosData';
 
 const DetallesSitio = () => {
     const { id } = useParams();
     const sitio = sitios.find(s => s.id === parseInt(id));
+    const { nombre, descripcion, imagen, localizacion } = sitio || {};
+    const { data, loading, error, name } = useWikipedia(nombre);
 
     if (!sitio) {
         return <p>El sitio no se encuentra</p>;
     }
-
-    const { nombre, descripcion, imagen, localizacion } = sitio;
 
     const customIcon = new L.Icon({
         iconUrl: '/images/localization.png',
@@ -30,13 +31,18 @@ const DetallesSitio = () => {
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imagen})`,
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center',
-                
             }}>
-                <h1>{nombre}</h1>
+                <h1>{name}</h1>
             </div>
             
             <div className="descripcion">
-                <div dangerouslySetInnerHTML={{ __html: descripcion }} className="texto"/>
+                {loading && <p>Cargando...</p>}
+                {error && <p>Error al cargar los datos</p>}
+                {data ? (
+                    <div dangerouslySetInnerHTML={{ __html: data }} className="texto"/>
+                ) : (
+                    <div dangerouslySetInnerHTML={{ __html: descripcion }} className="texto"/>
+                )}
             </div>
 
             <div className="map-wrapper">
@@ -48,7 +54,7 @@ const DetallesSitio = () => {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={[localizacion.latitud, localizacion.longitud]} icon={customIcon}>
-                        <Popup>{nombre}</Popup>
+                        <Popup>{data ? data.title : nombre}</Popup>
                     </Marker>
                 </MapContainer>
             </div>
