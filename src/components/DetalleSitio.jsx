@@ -1,18 +1,35 @@
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import './DetalleSitio.css';
 import 'leaflet/dist/leaflet.css';
+
+import React, { useEffect, useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 import L from 'leaflet';
-import './DetalleSitio.css';
+
 import QRGenerator from './QRGenerator';
 import useWikipedia from './useWikipedia';
 import { sitios } from './sitiosData';
+
+import actividadesJSON from '../actividades.json';
 
 const DetallesSitio = () => {
     const { id } = useParams();
     const sitio = sitios.find(s => s.id === parseInt(id));
     const { nombre, descripcion, imagen, localizacion } = sitio || {};
     const { data, loading, error, name } = useWikipedia(nombre);
+    const [comentarios, setComentarios] = useState([]);
+
+    useEffect(() => {
+        const fetchComentarios = async () => {
+            const actividad = actividadesJSON[id];
+            if (actividad) {
+                setComentarios(actividad.comentarios);
+            }
+        };
+    
+        fetchComentarios();
+    }, [id]);
+    
 
     if (!sitio) {
         return <p>El sitio no se encuentra</p>;
@@ -25,24 +42,85 @@ const DetallesSitio = () => {
         popupAnchor: [0, -32],
     });
 
+    const sitioEmblematico = actividadesJSON.sitiosEmblematicos
+            ? actividadesJSON.sitiosEmblematicos.find(se => se.id === parseInt(id))
+            : null;
+
+    const actividades = sitioEmblematico ? sitioEmblematico.actividades : [];
+
+
     return (
         <div className="detalles-sitio">
-            <div className='title' style={{ 
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imagen})`,
-                backgroundSize: 'cover', 
-                backgroundPosition: 'center',
-            }}>
-                <h1>{name}</h1>
+            <div
+                className="title"
+                style={{ 
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imagen})`,
+                    backgroundSize: 'cover', 
+                    backgroundPosition: 'center',
+                }}
+            >
+                <div className="comentario-emblematico">
+                    <h1>{sitioEmblematico?.comentario || 'No hay comentario emblemático'}</h1>
+                </div>
+            </div>
+
+            <div>
+                <h2>¿Qué puedo hacer allí?</h2>
+            </div>
+
+            <div className="contenedor-grid">
+                {actividades.map((actividad, index) => (
+                    <div key={index} className="elemento-item">
+                    <h3>{actividad.nombre}</h3>
+                    {actividad.detalles && actividad.detalles.length > 0 ? (
+                        <ul>
+                        {actividad.detalles.map((detalle, detalleIndex) => (
+                            <li key={detalleIndex}>
+                            <strong>{detalle.nombre}</strong>: {detalle.descripcion}
+                            </li>
+                        ))}
+                        </ul>
+                    ) : (
+                        <p>No hay detalles disponibles</p>
+                    )}
+                    </div>
+                ))}
+            </div>
+
+
+            <div>
+                <h2>Consejos</h2>
+            </div>
+
+            <div className="contenedor-grid">
+                {sitioEmblematico?.consejos && sitioEmblematico.consejos.length > 0 ? (
+                    sitioEmblematico.consejos.map((consejo, index) => (
+                    <div key={index} className="elemento-item">
+                        <p>{consejo}</p>
+                    </div>
+                    ))
+                ) : (
+                    <p>No hay consejos disponibles</p>
+                )}
+            </div>
+
+
+            <div>
+                <h2>Un poco de historia</h2>
             </div>
             
             <div className="descripcion">
                 {loading && <p>Cargando...</p>}
                 {error && <p>Error al cargar los datos</p>}
                 {data ? (
-                    <div dangerouslySetInnerHTML={{ __html: data }} className="texto"/>
+                    <div dangerouslySetInnerHTML={{ __html: data }} className="texto" />
                 ) : (
-                    <div dangerouslySetInnerHTML={{ __html: descripcion }} className="texto"/>
+                    <div dangerouslySetInnerHTML={{ __html: descripcion }} className="texto" />
                 )}
+            </div>
+
+            <div>
+                <h2>Localización</h2>
             </div>
 
             <div className="map-wrapper">
@@ -51,14 +129,15 @@ const DetallesSitio = () => {
                     zoom={16}
                 >
                     <TileLayer
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp"
                     />
                     <Marker position={[localizacion.latitud, localizacion.longitud]} icon={customIcon}>
                         <Popup>{data ? data.title : nombre}</Popup>
                     </Marker>
                 </MapContainer>
             </div>
-            <QRGenerator id={id}></QRGenerator>
+            <QRGenerator id={id} />
+            
         </div>
     );
 };
