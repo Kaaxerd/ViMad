@@ -93,3 +93,53 @@
     margin-bottom: 60px; /* Espacio debajo del div */
 }
 
+/* Estilos para los contenedores principales */
+.contenedor-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite múltiples filas */
+    gap: 50px; /* Espaciado entre elementos */
+    justify-content: center; /* Centra filas incompletas */
+    padding: 50px; /* Espaciado interno */
+    padding-top: 0;
+  }
+  
+  /* Estilos para los elementos individuales */
+  .elemento-item {
+    flex: 1 1 calc(25% - 50px); /* Ajusta al 25% del ancho menos el gap */
+    max-width: 250px; /* Ancho máximo */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden;
+    transition: transform 0.3s;
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+  }
+  
+  .elemento-item:hover {
+    transform: scale(1.05); /* Efecto de ampliación */
+  }
+  
+  .elemento-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .elemento-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .elemento-item ul {
+    list-style: none; /* Elimina los puntos de las listas */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .elemento-item li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
