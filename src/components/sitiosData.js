@@ -86,7 +86,7 @@ export const sitios = [
     {
         id: 15,
         nombre: "Estadio_Santiago_Bernabéu",
-        imagen: "/images/monumentos/bernabeu.webp",
+        imagen: "/images/monumentos/Bernabeu.webp",
         localizacion: { latitud: 40.4531, longitud: -3.6883 }
     },
     {
