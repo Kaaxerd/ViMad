@@ -1,28 +1,76 @@
+/* General Header Styling */
 .header {
-    background-color: lightblue;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(90deg, #3da4ff, #43f6ff); /* Fondo con gradiente */
+    color: white; /* Color del texto */
+    padding: 15px 30px; /* Ajusta el espaciado interno */
+    display: flex; /* Flexbox para organizar los elementos */
+    justify-content: space-between; /* Espaciado entre el logo y el nav */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
-.header img {
-    margin-right: auto;
+/* Logo Styling */
+.header .logo {
+    height: 50px; /* Tamaño del logo */
+    max-width: 100%;
+    margin-right: auto; /* Alinea a la izquierda */
+    transition: transform 0.3s ease-in-out; /* Transición para hover */
 }
 
-.header nav {
-    margin-left: auto;
+.header .logo:hover {
+    transform: scale(1.1); /* Ampliación suave al pasar el ratón */
 }
 
-.header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+/* Navigation Styling */
+.nav-links {
+    display: flex; /* Coloca los enlaces en línea horizontal */
+    gap: 20px; /* Espaciado entre enlaces */
 }
 
-.header nav a:hover {
-    text-decoration: underline;
+.nav-links a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina subrayados */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita para destacar */
+    padding: 10px 15px; /* Espaciado interno para clics cómodos */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.nav-links a:hover {
+    color: #000; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Header Shadow Effect on Scroll */
+.header.scrolled {
+    background: linear-gradient(90deg, #0061ff, #60efff); /* Cambia el fondo al hacer scroll */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 10px; /* Reduce el espaciado entre enlaces */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Reduce el tamaño de los enlaces */
+        padding: 8px 10px; /* Ajusta el espaciado interno */
+    }
+
+    .header {
+        padding: 10px 20px; /* Reduce el padding del header */
+    }
+
+    .header .logo {
+        height: 40px; /* Ajusta el tamaño del logo */
+    }
 }
 
 .footer {

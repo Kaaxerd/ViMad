@@ -25,12 +25,13 @@
 }
 
 .tarjeta-contenido {
-  padding: 12px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
 }
 
 .tarjeta h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .tarjeta p {

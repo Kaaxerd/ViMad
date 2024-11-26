@@ -1,24 +1,29 @@
+html, body
+{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 /* Estilos para el contenedor principal */
 .detalles-sitio {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Título */
-/* .detalles-sitio h1 {
+.detalles-sitio h1 {
     font-size: 2rem;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
-} */
+} 
 
 /* Descripción */
 .texto{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: center;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -77,6 +82,7 @@
 }
 
 .title {
+    font-family: 'Montserrat', sans-serif;
     width: 100vw; /* Ocupa todo el ancho de la ventana */
     height: 80vh; /* Altura ajustada */
     display: flex;
@@ -93,8 +99,17 @@
     margin-bottom: 60px; /* Espacio debajo del div */
 }
 
+.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 2%;
+}
+
 /* Estilos para los contenedores principales */
 .contenedor-grid {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-wrap: wrap; /* Permite múltiples filas */
     gap: 50px; /* Espaciado entre elementos */
@@ -113,7 +128,6 @@
     overflow: hidden;
     transition: transform 0.3s;
     padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centra el texto dentro de cada elemento */
   }
   
   .elemento-item:hover {
@@ -122,24 +136,37 @@
   
   .elemento-item h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #333;
+    text-align: center;
+    padding-bottom: 2%;
   }
   
   .elemento-item p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #555;
+    text-align: left;
+  }
+
+  .elemento-item strong, .consejo-subtitulo
+  {
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 2%;
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 2px 4px; /* Espaciado interno */
   }
   
   .elemento-item ul {
     list-style: none; /* Elimina los puntos de las listas */
-    padding: 0;
+    padding: 10px;
     margin: 0;
   }
   
   .elemento-item li {
+    text-align: left;
     margin-bottom: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  

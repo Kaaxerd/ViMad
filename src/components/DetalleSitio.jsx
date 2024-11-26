@@ -65,7 +65,7 @@ const DetallesSitio = () => {
             </div>
 
             <div>
-                <h2>¿Qué puedo hacer allí?</h2>
+                <h2 className='subtitulo'>¿Qué puedo hacer allí?</h2>
             </div>
 
             <div className="contenedor-grid">
@@ -89,24 +89,33 @@ const DetallesSitio = () => {
 
 
             <div>
-                <h2>Consejos</h2>
+                <h2 className='subtitulo'>Consejos</h2>
             </div>
 
             <div className="contenedor-grid">
                 {sitioEmblematico?.consejos && sitioEmblematico.consejos.length > 0 ? (
-                    sitioEmblematico.consejos.map((consejo, index) => (
-                    <div key={index} className="elemento-item">
-                        <p>{consejo}</p>
-                    </div>
-                    ))
+                    sitioEmblematico.consejos.map((consejo, index) => {
+                        // Dividir el texto en partes usando ":" como separador
+                        const partes = consejo.split(':');
+
+                        return (
+                            <div key={index} className="elemento-item">
+                                <p>
+                                    <span className="consejo-subtitulo">{partes[0]}:</span> {/* Parte antes del ":" */}
+                                    <span> {partes[1]?.trim() || ""}</span> {/* Parte después del ":" */}
+                                </p>
+                            </div>
+                        );
+                    })
                 ) : (
                     <p>No hay consejos disponibles</p>
                 )}
             </div>
 
 
+
             <div>
-                <h2>Un poco de historia</h2>
+                <h2 className='subtitulo'>Un poco de historia</h2>
             </div>
             
             <div className="descripcion">
@@ -120,7 +129,7 @@ const DetallesSitio = () => {
             </div>
 
             <div>
-                <h2>Localización</h2>
+                <h2 className='subtitulo'>Localización</h2>
             </div>
 
             <div className="map-wrapper">
