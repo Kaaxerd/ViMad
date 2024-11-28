@@ -11,3 +11,9 @@
     height: 500px;            /* Altura del mapa */
     width: 80%;             /* Ancho del mapa */
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-top: 20px;
+}

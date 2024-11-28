@@ -6,8 +6,6 @@ import L from 'leaflet';
 import './Map.css'
 
 const Map = () => {
-
-
     const customIcon = new L.Icon({
         iconUrl: '/images/localization.png',  // Ruta de la imagen del icono
         iconSize: [64, 64],  // Tamaño del icono
@@ -18,7 +16,7 @@ const Map = () => {
 
     return (
         <div>
-            <h1>Mapa</h1>
+            <h2>Mapa</h2>
             <div className="map-container">
 
                 <MapContainer center={[40.416775, -3.703790]} zoom={15} className="react-leaflet-container">

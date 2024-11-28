@@ -1,7 +1,7 @@
 /* CSS necesario sólo para la página de inicio */
 
 .intro {
-    font-family: 'Monoserat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../public/images/echegaray.webp');
     background-size: cover;
     background-position: center;
@@ -19,6 +19,7 @@
 .intro h1, .intro p {
     position: relative;
     z-index: 2; /* Places the text above the overlay */
+    padding: 0 60px; /* Adds padding to avoid text being stuck to the sides */
 }
 
 .intro h1 {
@@ -32,7 +33,7 @@
 
 h2
 {
-    font-family: "Monoserat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     margin-top: 20px;
 }
