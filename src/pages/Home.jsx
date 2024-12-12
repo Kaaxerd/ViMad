@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <div className="intro">
-                <h1>Descubre Madrid como nunca antes lo has hecho</h1>
+                <h1>Descubre <span className="gradient-text">el mundo</span> como nunca antes lo has hecho</h1>
                 <p>Descubre los lugares más emblemáticos de la capital de España.</p>
             </div>
 
