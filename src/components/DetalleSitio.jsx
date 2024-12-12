@@ -1,7 +1,7 @@
 import './DetalleSitio.css';
 import 'leaflet/dist/leaflet.css';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 import L from 'leaflet';
@@ -16,14 +16,12 @@ const DetallesSitio = () => {
     const { id } = useParams();
     const sitio = sitios.find(s => s.id === parseInt(id));
     const { nombre, descripcion, imagen, localizacion } = sitio || {};
-    const { data, loading, error, name } = useWikipedia(nombre);
-    const [comentarios, setComentarios] = useState([]);
+    const { data, loading, error} = useWikipedia(nombre);
 
     useEffect(() => {
         const fetchComentarios = async () => {
             const actividad = actividadesJSON[id];
             if (actividad) {
-                setComentarios(actividad.comentarios);
             }
         };
     

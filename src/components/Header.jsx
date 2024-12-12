@@ -1,5 +1,4 @@
 import './HeaderFooter.css';
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +13,13 @@ const Header = () => {
                 <Link to="/about">Sobre nosotros</Link>
                 <Link to="/error">Error</Link>
             </nav>
+            <Link to="/profile" className="profile-link">
+                <img
+                    src="/images/profile.png" 
+                    alt="Perfil"
+                    className="profile-circle"
+                />
+            </Link>
         </header>
     );
 };

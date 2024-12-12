@@ -39,37 +39,36 @@
     font-size: 20px; /* Tamaño de la fuente */
     font-weight: bold; /* Negrita para destacar */
     padding: 10px 15px; /* Espaciado interno para clics cómodos */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+    border-radius: 8px; 
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #000; /* Cambia el color del texto al pasar el ratón */
+    color: #000; 
 }
 
-/* Header Shadow Effect on Scroll */
 .header.scrolled {
-    background: linear-gradient(90deg, #0061ff, #60efff); /* Cambia el fondo al hacer scroll */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    background: linear-gradient(90deg, #0061ff, #60efff);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
     .nav-links {
-        gap: 10px; /* Reduce el espaciado entre enlaces */
+        gap: 10px; 
     }
 
     .nav-links a {
-        font-size: 14px; /* Reduce el tamaño de los enlaces */
-        padding: 8px 10px; /* Ajusta el espaciado interno */
+        font-size: 14px; 
+        padding: 8px 10px; 
     }
 
     .header {
-        padding: 10px 20px; /* Reduce el padding del header */
+        padding: 10px 20px; 
     }
 
     .header .logo {
-        height: 40px; /* Ajusta el tamaño del logo */
+        height: 40px; 
     }
 }
 
@@ -96,8 +95,8 @@
 
 .footer-columns {
     display: flex;
-    justify-content: space-around; /* Changed from space-between to space-around */
-    padding: 0 20px; /* Added padding to give some space on the sides */
+    justify-content: space-around; 
+    padding: 0 20px; 
 }
 
 .footer-columns ul {
@@ -122,4 +121,18 @@
 
 .logo{
     height: 50px;
+}
+
+.profile-link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc; 
 }
