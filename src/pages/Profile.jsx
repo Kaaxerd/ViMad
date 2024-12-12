@@ -76,7 +76,7 @@ const Profile = () => {
       <div>
 
         <div className="welcome-container">
-          <h1 className="welcome-title">Bienvenido a tu colección, {user.name}!</h1>
+          <h1 className="welcome-title">Bienvenido a tu <span className="gradient-text">colección</span>, {user.name}!</h1>
         </div>
         <div className="sitios-grid">
           {favoritosSitios.map((sitio) => (

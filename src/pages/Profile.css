@@ -77,12 +77,12 @@
     border-radius: 4px;
     font-size: 1.1rem;
     margin-top: 20px;
+    margin-bottom: 20px; /* Agregado margen en la parte inferior */
 }
 
 .logout-button:hover {
     background-color: #c82333;
 }
-
 
 /* tarjeta */
 .sitios-grid {
@@ -141,4 +141,11 @@
 
 .like-button.liked {
     color: red;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #f78fb3, #f1c40f);/* Gradiente azul a dorado */
+    -webkit-background-clip: text; /* Aplicar el gradiente solo al texto */
+    color: transparent; /* Hacer el color del texto transparente para que se vea el gradiente */
+    font-weight: bold; /* Opcional: para que resalte más */
 }
