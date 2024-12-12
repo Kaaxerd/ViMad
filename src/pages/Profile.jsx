@@ -4,6 +4,7 @@ import { sitios } from '../components/sitiosData'; // Importamos los sitios desd
 import * as Yup from 'yup'; // Importa Yup
 import { Link } from 'react-router-dom'; // Importa Link
 import './Profile.css'; // Importa el archivo CSS
+import WorldMap from '../components/WorldMap';
 
 const Profile = () => {
   const [isRegistered, setIsRegistered] = useState(false);
@@ -97,6 +98,8 @@ const Profile = () => {
             </div>
           ))}
         </div>
+        <h1 className="welcome-title"> <span className="gradient-text">MapaMundi</span></h1>
+        <WorldMap></WorldMap>
         <button onClick={handleLogout} className="logout-button">
           Cerrar sesión
         </button>
