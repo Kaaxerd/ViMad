@@ -5,7 +5,7 @@ import React, { useEffect} from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 import L from 'leaflet';
-
+import 'leaflet/dist/leaflet.css';
 import QRGenerator from './QRGenerator';
 import useWikipedia from './useWikipedia';
 import { sitios } from './sitiosData';
@@ -136,7 +136,7 @@ const DetallesSitio = () => {
                     zoom={16}
                 >
                     <TileLayer
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp"
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={[localizacion.latitud, localizacion.longitud]} icon={customIcon}>
                         <Popup>{data ? data.title : nombre}</Popup>

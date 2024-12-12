@@ -1374,6 +1374,316 @@
           "Entrada Gratuita: Los lunes de 12:00 a 16:00 horas.",
           "Reserva Anticipada: Recomendable para exposiciones temporales."
         ]
+      },
+      {
+        "id": 21,
+        "comentario": "Eiffel Tower",
+        "actividades": [
+          {
+            "nombre": "Subida a la Torre",
+            "detalles": [
+              {
+                "nombre": "Primer Nivel",
+                "descripcion": "Disfruta de vistas panorámicas y una cafetería con encanto."
+              },
+              {
+                "nombre": "Segundo Nivel",
+                "descripcion": "Mejores vistas de París y acceso a tiendas de recuerdos."
+              },
+              {
+                "nombre": "Cima",
+                "descripcion": "Experimenta una vista de 360° desde lo más alto de la torre."
+              }
+            ]
+          },
+          {
+            "nombre": "Cena en el Restaurante 58 Tour Eiffel",
+            "detalles": [
+              {
+                "nombre": "Cocina Francesa",
+                "descripcion": "Degusta platos franceses tradicionales con vistas increíbles."
+              }
+            ]
+          },
+          {
+            "nombre": "Fotografía Nocturna",
+            "detalles": [
+              {
+                "nombre": "Luces Brillantes",
+                "descripcion": "La torre se ilumina cada noche durante cinco minutos cada hora."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Compra entradas online para evitar filas.",
+          "Visita temprano o al anochecer para mejores vistas y menos multitudes."
+        ]
+      },
+      {
+        "id": 22,
+        "comentario": "Taj Mahal",
+        "actividades": [
+          {
+            "nombre": "Recorrido por los Jardines",
+            "detalles": [
+              {
+                "nombre": "Diseño Simétrico",
+                "descripcion": "Admira los jardines mogoles con fuentes y canales reflejantes."
+              }
+            ]
+          },
+          {
+            "nombre": "Exploración del Mausoleo",
+            "detalles": [
+              {
+                "nombre": "Cúpula de Mármol Blanco",
+                "descripcion": "Una maravilla arquitectónica y símbolo del amor eterno."
+              }
+            ]
+          },
+          {
+            "nombre": "Visitas Guiadas",
+            "detalles": [
+              {
+                "nombre": "Historia y Cultura",
+                "descripcion": "Descubre los secretos y la historia detrás del Taj Mahal."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Visita al amanecer para evitar multitudes y disfrutar de la luz perfecta.",
+          "Se requiere descalzarse o usar protectores de zapatos al entrar al mausoleo."
+        ]
+      },
+      {
+        "id": 23,
+        "comentario": "Coliseo Romano",
+        "actividades": [
+          {
+            "nombre": "Tour del Coliseo",
+            "detalles": [
+              {
+                "nombre": "Arena Central",
+                "descripcion": "Imagina los combates de gladiadores que tuvieron lugar aquí."
+              },
+              {
+                "nombre": "Subsuelo",
+                "descripcion": "Explora las áreas donde se mantenían los animales y gladiadores."
+              }
+            ]
+          },
+          {
+            "nombre": "Visita al Foro Romano",
+            "detalles": [
+              {
+                "nombre": "Ruinas Históricas",
+                "descripcion": "Un paseo por el corazón político de la antigua Roma."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Compra entradas combinadas para el Coliseo, Foro y Palatino.",
+          "Lleva protector solar y agua en verano; hay pocas áreas con sombra."
+        ]
+      },
+      {
+        "id": 24,
+        "comentario": "Gran Muralla China",
+        "actividades": [
+          {
+            "nombre": "Excursión a las Torres de Vigilancia",
+            "detalles": [
+              {
+                "nombre": "Historia y Paisaje",
+                "descripcion": "Descubre cómo esta maravilla protegía al imperio chino."
+              }
+            ]
+          },
+          {
+            "nombre": "Senderismo",
+            "detalles": [
+              {
+                "nombre": "Secciones Restauradas y Salvajes",
+                "descripcion": "Elige entre áreas turísticas o partes menos exploradas."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Lleva calzado cómodo para caminar largas distancias.",
+          "Visita temprano para evitar multitudes."
+        ]
+      },
+      {
+        "id": 25,
+        "comentario": "Cristo Redentor",
+        "actividades": [
+          {
+            "nombre": "Visita al Mirador",
+            "detalles": [
+              {
+                "nombre": "Vistas de Río",
+                "descripcion": "Disfruta de vistas panorámicas de la ciudad y el océano."
+              }
+            ]
+          },
+          {
+            "nombre": "Tour en Tren del Corcovado",
+            "detalles": [
+              {
+                "nombre": "Viaje Escénico",
+                "descripcion": "Un recorrido en tren a través de la selva tropical."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Compra entradas con anticipación para evitar filas.",
+          "Visita en días despejados para obtener las mejores vistas."
+        ]
+      },
+      {
+        "id": 26,
+        "comentario": "Machu Picchu",
+        "actividades": [
+          {
+            "nombre": "Exploración de las Ruinas",
+            "detalles": [
+              {
+                "nombre": "Templo del Sol",
+                "descripcion": "Admira este lugar sagrado con vistas espectaculares."
+              }
+            ]
+          },
+          {
+            "nombre": "Caminata al Huayna Picchu",
+            "detalles": [
+              {
+                "nombre": "Vistas Elevadas",
+                "descripcion": "Una subida desafiante con vistas impresionantes."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Reserva boletos con meses de anticipación.",
+          "Lleva ropa ligera y agua para la caminata."
+        ]
+      },
+      {
+        "id": 27,
+        "comentario": "Estatua de la Libertad",
+        "actividades": [
+          {
+            "nombre": "Recorrido en Ferry",
+            "detalles": [
+              {
+                "nombre": "Vistas de Manhattan",
+                "descripcion": "Un recorrido en barco con vistas icónicas."
+              }
+            ]
+          },
+          {
+            "nombre": "Subida a la Corona",
+            "detalles": [
+              {
+                "nombre": "Panorama",
+                "descripcion": "Disfruta de vistas exclusivas desde la corona."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Reserva con anticipación para acceder a la corona.",
+          "Lleva una cámara para capturar las vistas desde el ferry."
+        ]
+      },
+      {
+        "id": 28,
+        "comentario": "Petra",
+        "actividades": [
+          {
+            "nombre": "Recorrido por el Siq",
+            "detalles": [
+              {
+                "nombre": "Cañón Estrecho",
+                "descripcion": "Camina por este pasaje único hacia el Tesoro."
+              }
+            ]
+          },
+          {
+            "nombre": "Exploración del Tesoro",
+            "detalles": [
+              {
+                "nombre": "Arquitectura Tallada",
+                "descripcion": "Admira la fachada icónica tallada en roca."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Visita temprano para evitar el calor y las multitudes.",
+          "Lleva agua y calzado cómodo para caminar."
+        ]
+      },
+      {
+        "id": 29,
+        "comentario": "Sagrada Familia",
+        "actividades": [
+          {
+            "nombre": "Tour Interior",
+            "detalles": [
+              {
+                "nombre": "Diseño de Gaudí",
+                "descripcion": "Explora los detalles del estilo modernista."
+              }
+            ]
+          },
+          {
+            "nombre": "Subida a las Torres",
+            "detalles": [
+              {
+                "nombre": "Vistas de Barcelona",
+                "descripcion": "Admira la ciudad desde lo alto de las torres."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Compra boletos online para evitar filas.",
+          "Visita temprano o al anochecer para mejores fotos."
+        ]
+      },
+      {
+        "id": 30,
+        "comentario": "Pirámides de Giza",
+        "actividades": [
+          {
+            "nombre": "Exploración de la Gran Pirámide",
+            "detalles": [
+              {
+                "nombre": "Cámara del Rey",
+                "descripcion": "Explora el interior de esta maravilla del mundo antiguo."
+              }
+            ]
+          },
+          {
+            "nombre": "Recorrido por la Esfinge",
+            "detalles": [
+              {
+                "nombre": "Historia y Misterio",
+                "descripcion": "Admira este impresionante monumento."
+              }
+            ]
+          }
+        ],
+        "consejos": [
+          "Visita temprano para evitar el calor.",
+          "Lleva protector solar y una botella de agua."
+        ]
       }
     ]
   }

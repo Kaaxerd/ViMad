@@ -18,7 +18,7 @@ const WorldMap = () => {
         <div>
             <div className="map-container">
                 {/* Mapa centrado en el centro del mundo con un zoom para ver todo el mapa */}
-                <MapContainer center={[0, 0]} zoom={2} className="react-leaflet-container" style={{ height: '500px', width: '100%' }}>
+                <MapContainer center={[40, 0]} zoom={2} className="react-leaflet-container" style={{ height: '500px', width: '100%' }}>
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
