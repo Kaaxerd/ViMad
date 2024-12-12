@@ -118,5 +118,65 @@ export const sitios = [
         nombre: "Museo_Thyssen-Bornemisza",
         imagen: "/images/monumentos/thyssen.webp",
         localizacion: { latitud: 40.4138, longitud: -3.6948 }
+    },
+    {
+        id: 21,
+        nombre: "Eiffel_Tower",
+        imagen: "/images/monumentos/eiffel_tower.webp",
+        localizacion: { latitud: 48.8584, longitud: 2.2945 }
+    },
+    {
+        id: 22,
+        nombre: "Taj_Mahal",
+        imagen: "/images/monumentos/taj_mahal.webp",
+        localizacion: { latitud: 27.1751, longitud: 78.0421 }
+    },
+    {
+        id: 23,
+        nombre: "Coliseo_Romano",
+        imagen: "/images/monumentos/coliseo_romano.webp",
+        localizacion: { latitud: 41.8902, longitud: 12.4922 }
+    },
+    {
+        id: 24,
+        nombre: "Gran_Muralla_China",
+        imagen: "/images/monumentos/gran_muralla_china.webp",
+        localizacion: { latitud: 40.4319, longitud: 116.5704 }
+    },
+    {
+        id: 25,
+        nombre: "Cristo_Redentor",
+        imagen: "/images/monumentos/cristo_redentor.webp",
+        localizacion: { latitud: -22.9519, longitud: -43.2105 }
+    },
+    {
+        id: 26,
+        nombre: "Machu_Picchu",
+        imagen: "/images/monumentos/machu_picchu.webp",
+        localizacion: { latitud: -13.1631, longitud: -72.5450 }
+    },
+    {
+        id: 27,
+        nombre: "Estatua_de_Libertad",
+        imagen: "/images/monumentos/estatua_de_libertad.webp",
+        localizacion: { latitud: 40.6892, longitud: -74.0445 }
+    },
+    {
+        id: 28,
+        nombre: "Petra",
+        imagen: "/images/monumentos/petra.webp",
+        localizacion: { latitud: 30.3285, longitud: 35.4444 }
+    },
+    {
+        id: 29,
+        nombre: "Sagrada_Familia",
+        imagen: "/images/monumentos/sagrada_familia.webp",
+        localizacion: { latitud: 41.4036, longitud: 2.1744 }
+    },
+    {
+        id: 30,
+        nombre: "Pyramids_of_Giza",
+        imagen: "/images/monumentos/pyramids_of_giza.webp",
+        localizacion: { latitud: 29.9792, longitud: 31.1342 }
     }
 ];
