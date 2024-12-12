@@ -15,7 +15,7 @@ const Home = () => {
             </div>
 
             <div className="sitios">
-                <h2>¡Descubre los siguientes sitios!</h2>
+                <h2>¡Coleccionalos todos!</h2>
             </div>
 
             <SitiosEmblematicos /> 

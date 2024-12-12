@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 // Páginas clave
 import Home from './pages/Home';
 import About from './pages/About';
+import Error from './pages/Error';
 import Profile from './pages/Profile';
 
 // Páginas de sitios emblemáticos
@@ -38,6 +39,7 @@ function App() {
             {/* Páginas clave */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/error" element={<Error />} />
             
             {/* Página de detalles de sitio */}
             <Route path="/sitio/:id" element={<DetalleSitio />} />
