@@ -118,7 +118,7 @@ const DetallesSitio = () => {
             
             <div className="descripcion">
                 {loading && <p>Cargando...</p>}
-                {error && <p>Error al cargar los datos</p>}
+                {error && <p>Aún no tenemos información sobre este monumento</p>}
                 {data ? (
                     <div dangerouslySetInnerHTML={{ __html: data }} className="texto" />
                 ) : (

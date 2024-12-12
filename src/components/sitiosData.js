@@ -121,7 +121,7 @@ export const sitios = [
     },
     {
         id: 21,
-        nombre: "Eiffel_Tower",
+        nombre: "Torre_Eiffel",
         imagen: "/images/monumentos/eiffel_tower.webp",
         localizacion: { latitud: 48.8584, longitud: 2.2945 }
     },
@@ -133,7 +133,7 @@ export const sitios = [
     },
     {
         id: 23,
-        nombre: "Coliseo_Romano",
+        nombre: "Coliseo",
         imagen: "/images/monumentos/coliseo_romano.webp",
         localizacion: { latitud: 41.8902, longitud: 12.4922 }
     },
@@ -157,7 +157,7 @@ export const sitios = [
     },
     {
         id: 27,
-        nombre: "Estatua_de_Libertad",
+        nombre: "Estatua_de_la_Libertad",
         imagen: "/images/monumentos/estatua_de_libertad.webp",
         localizacion: { latitud: 40.6892, longitud: -74.0445 }
     },
@@ -175,7 +175,7 @@ export const sitios = [
     },
     {
         id: 30,
-        nombre: "Pyramids_of_Giza",
+        nombre: "Gran_Pirámide_de_Guiza",
         imagen: "/images/monumentos/pyramids_of_giza.webp",
         localizacion: { latitud: 29.9792, longitud: 31.1342 }
     }
