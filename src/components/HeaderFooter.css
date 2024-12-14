@@ -1,6 +1,6 @@
 /* General Header Styling */
 .header {
-    background: linear-gradient(90deg, #3da4ff, #43f6ff); /* Fondo con gradiente */
+    background: linear-gradient(90deg, #A3084C, #960024); /* Fondo con gradiente */
     color: white; /* Color del texto */
     padding: 15px 30px; /* Ajusta el espaciado interno */
     display: flex; /* Flexbox para organizar los elementos */

@@ -14,6 +14,9 @@
     color: white; /* Optional: Makes the text color white for better contrast */
     text-align: center; /* Optional: Centers the text within the div */
     position: relative; /* Needed for the overlay */
+    margin: 0; /* Elimina márgenes exteriores */
+    padding: 0; /* Asegura que no haya espacio interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .intro h1, .intro p {
