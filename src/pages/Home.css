@@ -44,3 +44,41 @@ h2
     color: transparent; /* Hacer el color del texto transparente para que se vea el gradiente */
     font-weight: bold; /* Opcional: para que resalte más */
 }
+
+
+@media (max-width: 768px) {
+    .intro {
+        height: 70vh; /* Reducir altura de la sección */
+        padding: 0 20px; /* Ajustar padding */
+    }
+
+    .intro h1 {
+        font-size: 2.5em; /* Reducir más el tamaño */
+    }
+
+    .intro p {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        height: 60vh; /* Ajustar altura para dispositivos pequeños */
+    }
+
+    .intro h1 {
+        font-size: 2em; /* Tamaño para teléfonos */
+    }
+
+    .intro p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}   

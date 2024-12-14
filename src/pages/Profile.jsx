@@ -98,7 +98,7 @@ const Profile = () => {
             </div>
           ))}
         </div>
-        <WorldMap></WorldMap>
+        <WorldMap className = "MapaMundi"></WorldMap>
         <button onClick={handleLogout} className="logout-button">
           Cerrar sesión
         </button>

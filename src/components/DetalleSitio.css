@@ -1,8 +1,8 @@
-html, body
-{
+html, body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
+
 /* Estilos para el contenedor principal */
 .detalles-sitio {
     font-family: 'Roboto', sans-serif;
@@ -17,7 +17,7 @@ html, body
 } 
 
 /* Descripción */
-.texto{
+.texto {
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     font-size: 1rem;
@@ -43,9 +43,7 @@ html, body
 .detalles-sitio .map-wrapper {
     display: flex;
     justify-content: center;
-
     align-items: center;
-    /* Centra verticalmente (si es necesario) */
 }
 
 .map-wrapper {
@@ -54,26 +52,11 @@ html, body
 }
 
 .leaflet-container {
-    height: 100%; /* Ensure the map takes up the full height of the container */
-    width: 50%; /* Ensure the map takes up the full width of the container */
+    height: 100%; 
+    width: 50%;
 }
 
-/* Responsividad para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .detalles-sitio h1 {
-        font-size: 1.5rem;
-    }
-
-    .detalles-sitio p {
-        font-size: 0.9rem;
-        padding: 0 10px;
-    }
-
-    .detalles-sitio img {
-        max-height: 300px;
-    }
-}
-
+/* Título grande */
 .title h1 {
     font-size: 5rem;
     color: #fcfcfc;
@@ -83,20 +66,20 @@ html, body
 
 .title {
     font-family: 'Montserrat', sans-serif;
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
-    height: 80vh; /* Altura ajustada */
+    width: 100vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* Contraste del texto */
+    color: white;
     text-align: center;
     position: relative;
-    margin: 0; /* Elimina márgenes laterales */
+    margin: 0;
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 60px; /* Espacio debajo del div */
+    margin-bottom: 60px;
 }
 
 .subtitulo {
@@ -107,66 +90,170 @@ html, body
     padding-bottom: 2%;
 }
 
-/* Estilos para los contenedores principales */
+/* Contenedor de elementos */
 .contenedor-grid {
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-wrap: wrap; /* Permite múltiples filas */
-    gap: 50px; /* Espaciado entre elementos */
-    justify-content: center; /* Centra filas incompletas */
-    padding: 50px; /* Espaciado interno */
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px;
     padding-top: 0;
-  }
-  
-  /* Estilos para los elementos individuales */
-  .elemento-item {
-    flex: 1 1 calc(25% - 50px); /* Ajusta al 25% del ancho menos el gap */
-    max-width: 250px; /* Ancho máximo */
+}
+
+.elemento-item {
+    flex: 1 1 calc(25% - 50px);
+    max-width: 250px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    padding: 20px; /* Espaciado interno */
-  }
-  
-  .elemento-item:hover {
-    transform: scale(1.05); /* Efecto de ampliación */
-  }
-  
-  .elemento-item h3 {
+    padding: 20px;
+}
+
+.elemento-item:hover {
+    transform: scale(1.05);
+}
+
+.elemento-item h3 {
     margin: 0;
     font-size: 1.3rem;
     color: #333;
     text-align: center;
     padding-bottom: 2%;
-  }
-  
-  .elemento-item p {
+}
+
+.elemento-item p {
     margin: 0;
     font-size: 1rem;
     color: #555;
     text-align: left;
-  }
+}
 
-  .elemento-item strong, .consejo-subtitulo
-  {
+.elemento-item strong, .consejo-subtitulo {
     font-weight: bold;
     font-style: italic;
     padding-right: 2%;
-    background-color: #f9f9f9; /* Fondo claro para contraste */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 2px 4px; /* Espaciado interno */
-  }
-  
-  .elemento-item ul {
-    list-style: none; /* Elimina los puntos de las listas */
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.elemento-item ul {
+    list-style: none;
     padding: 10px;
     margin: 0;
-  }
-  
-  .elemento-item li {
+}
+
+.elemento-item li {
     text-align: left;
     margin-bottom: 10px;
     font-size: 1rem;
-  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+
+    .detalles-sitio h1 {
+        font-size: 1.5rem;
+    }
+
+    .texto {
+        font-size: 0.9rem;
+        padding: 0 20px;
+    }
+
+    .detalles-sitio img {
+        width: 70%;
+        padding: 50px;
+        max-height: 300px;
+    }
+
+    .map-wrapper {
+        height: 300px;
+    }
+
+    .leaflet-container {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+    }
+
+    .contenedor-grid {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .elemento-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 100%;
+    }
+
+    .elemento-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .elemento-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .detalles-sitio h1 {
+        font-size: 1.2rem;
+    }
+
+    .texto {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .detalles-sitio img {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .map-wrapper {
+        height: 250px;
+    }
+
+    .leaflet-container {
+        width: 95%;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .contenedor-grid {
+        gap: 20px;
+    }
+
+    .elemento-item {
+        flex: 1 1 100%;
+    }
+
+    .elemento-item h3 {
+        font-size: 1rem;
+    }
+
+    .elemento-item p {
+        font-size: 0.8rem;
+    }
+
+    .elemento-item li {
+        text-align: justify;
+    }
+}
+ 

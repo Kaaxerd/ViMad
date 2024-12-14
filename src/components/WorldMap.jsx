@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet'; // Asegúrate de importar leaflet para crear el ícono personalizado
+import './WorldMap.css';
 import { sitios } from './sitiosData'; // Asegúrate de importar tus datos de sitios
 
 // Personaliza el icono del marcador si lo necesitas
@@ -16,7 +17,7 @@ const sitiosFavoritosData = sitios.filter((sitio) => favoritosId.includes(sitio.
 const WorldMap = () => {
     return (
         <div>
-            <div className="map-container">
+            <div className="WorldMap-container">
                 {/* Mapa centrado en el centro del mundo con un zoom para ver todo el mapa */}
                 <MapContainer center={[40, 0]} zoom={2} className="react-leaflet-container" style={{ height: '500px', width: '100%' }}>
                     <TileLayer
