@@ -50,7 +50,7 @@
 
 .form-button {
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #A3084C;
     color: white;
     border: none;
     border-radius: 4px;
@@ -58,7 +58,7 @@
 }
 
 .form-button:hover {
-    background-color: #0056b3;
+    background-color: #960024;
 }
 
 /* Estilos de la sección de bienvenida */
