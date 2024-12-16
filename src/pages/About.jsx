@@ -28,10 +28,10 @@ const About = () => {
             photo: '/images/equipo/jorge-casas.jpg',
         },
         {
-            name: 'Alejandro Calderon',
+            name: 'Adrián Calderón',
             linkedin: 'https://www.linkedin.com/in/jorgecasase/',
             github: 'https://github.com/acalde02',
-            photo: '/images/equipo/no-tienes-foto.png',
+            photo: '/images/equipo/adrian-calderon.jpeg',
         },
     ];
 
