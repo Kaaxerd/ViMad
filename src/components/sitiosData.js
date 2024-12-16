@@ -142,7 +142,7 @@ export const sitios = [
     {
         id: 21,
         nombre: "Torre_Eiffel",
-        imagen: "/images/monumentos/eiffel_tower.webp",
+        imagen: "/images/monumentos/Eiffel_Tower.webp",
         localizacion: { latitud: 48.8584, longitud: 2.2945 },
         filtro: ["Monumentos", "Al aire libre"]
     },
