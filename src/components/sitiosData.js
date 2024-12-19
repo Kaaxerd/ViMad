@@ -149,63 +149,63 @@ export const sitios = [
     {
         id: 22,
         nombre: "Taj_Mahal",
-        imagen: "/images/monumentos/Taj_Mahal_27_11zon.webp",
+        imagen: "/images/monumentos/Taj_Mahal_27_11zon.jpg",
         localizacion: { latitud: 27.1751, longitud: 78.0421 },
         filtro: ["Monumentos", "Religión"]
     },
     {
         id: 23,
         nombre: "Coliseo",
-        imagen: "/images/monumentos/Coliseo_Romano_5_11zon.webp",
+        imagen: "/images/monumentos/Coliseo_Romano_5_11zon.jpg",
         localizacion: { latitud: 41.8902, longitud: 12.4922 },
         filtro: ["Monumentos", "Al aire libre"]
     },
     {
         id: 24,
         nombre: "Gran_Muralla_China",
-        imagen: "/images/monumentos/Gran_Muralla_China_10_11zon.webp",
+        imagen: "/images/monumentos/Gran_Muralla_China_10_11zon.jpg",
         localizacion: { latitud: 40.4319, longitud: 116.5704 },
         filtro: ["Monumentos", "Al aire libre"]
     },
     {
         id: 25,
         nombre: "Cristo_Redentor",
-        imagen: "/images/monumentos/Cristo_Redentor_6_11zon.webp",
+        imagen: "/images/monumentos/Cristo_Redentor_6_11zon.jpg",
         localizacion: { latitud: -22.9519, longitud: -43.2105 },
         filtro: ["Religión"]
     },
     {
         id: 26,
         nombre: "Machu_Picchu",
-        imagen: "/images/monumentos/Machu_Picchu_12_11zon.webp",
+        imagen: "/images/monumentos/Machu_Picchu_12_11zon.jpg",
         localizacion: { latitud: -13.1631, longitud: -72.5450 },
         filtro: ["Naturaleza"]
     },
     {
         id: 27,
         nombre: "Estatua_de_la_Libertad",
-        imagen: "/images/monumentos/Estatua_de_Libertad_8_11zon.webp",
+        imagen: "/images/monumentos/Estatua_de_Libertad_8_11zon.jpg",
         localizacion: { latitud: 40.6892, longitud: -74.0445 },
         filtro: ["Monumentos"]
     },
     {
         id: 28,
         nombre: "Petra",
-        imagen: "/images/monumentos/Petra_17_11zon.webp",
+        imagen: "/images/monumentos/Petra_17_11zon.jpg",
         localizacion: { latitud: 30.3285, longitud: 35.4444 },
         filtro: ["Monumentos", "Religión"]
     },
     {
         id: 29,
         nombre: "Sagrada_Familia",
-        imagen: "/images/monumentos/Sagrada_Familia_25_11zon.webp",
+        imagen: "/images/monumentos/Sagrada_Familia_25_11zon.jpg",
         localizacion: { latitud: 41.4036, longitud: 2.1744 },
         filtro: ["Religión", "Monumentos"]
     },
     {
         id: 30,
         nombre: "Gran_Pirámide_de_Guiza",
-        imagen: "/images/monumentos/Pyramids_of_Giza_22_11zon.webp",
+        imagen: "/images/monumentos/Pyramids_of_Giza_22_11zon.jpg",
         localizacion: { latitud: 29.9792, longitud: 31.1342 },
         filtro: ["Monumentos", "Religión"]
     }
